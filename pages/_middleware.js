@@ -10,9 +10,9 @@ export default async function middleware(req){
     
     const url = req.url
     
-    if(url.includes('http://localhost:3000/products' || 'http://localhost:3000/reviews')){
+    if(url.includes('https://ecommerce1234.vercel.app/products' || 'https://ecommerce1234.vercel.app/reviews')){
         if(token == undefined){
-            return NextResponse.redirect('http://localhost:3000/login')
+            return NextResponse.redirect('https://ecommerce1234.vercel.app/login')
         }
 
         try {
@@ -28,10 +28,10 @@ export default async function middleware(req){
                 return NextResponse.next()
             }
             else{
-                return NextResponse.redirect('http://localhost:3000/login')
+                return NextResponse.redirect('https://ecommerce1234.vercel.app/login')
             }
         } catch (error) {
-            return NextResponse.redirect('http://localhost:3000/login')
+            return NextResponse.redirect('https://ecommerce1234.vercel.app/login')
         }
     }
     return NextResponse.next()
