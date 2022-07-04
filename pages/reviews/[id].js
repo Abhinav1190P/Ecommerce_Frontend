@@ -113,7 +113,7 @@ export default function Reviews({ reviews }) {
       .then(response => response.data)
     
     setSuccess(rev.success)
-  }
+  }     
 
   useEffect(() => {
     if (success) {
