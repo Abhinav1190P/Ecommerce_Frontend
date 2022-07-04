@@ -38,7 +38,7 @@ const IndexPage = ({ products }) => {
                     <Flex w="100%" h="100%" flexDirection={'row'} alignItems={'flex-start'}>
 
                         <Box w={["70%","60%","70%"]} h="100%">
-                            <Heading w={["50%","30%","20%"]} h="100%" px={5} py={2} fontWeight={500}>
+                            <Heading w={["50%","30%","50%"]} h="100%" px={5} py={4} fontWeight={500}>
                                 Durian
                             </Heading>
                         </Box>
