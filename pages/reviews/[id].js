@@ -104,7 +104,7 @@ export default function Reviews({ reviews }) {
   }
 
   const SendObj = async (data) => {
-    const rev = await axios.post(`http://localhost:5000/api/rev/add-review/${id}`, data, {
+    const rev = await axios.post(`https://ecomm123-backend.herokuapp.com/api/rev/add-review/${id}`, data, {
       headers: {
         "Content-type": "Application/json",
         "Authorization": `Bearer ${cookie.get('token')}`
@@ -139,7 +139,7 @@ export default function Reviews({ reviews }) {
   useEffect(()=>{
     if(tab == 1){
       const GetUserReview = async () => {
-        const data = await axios.get(`http://localhost:5000/api/rev/get-user-reviews/${id}`,{ 
+        const data = await axios.get(`https://ecomm123-backend.herokuapp.com/api/rev/get-user-reviews/${id}`,{ 
           headers: {
             "Content-type": "Application/json",
             "Authorization": `Bearer ${cookie.get('token')}`
@@ -157,7 +157,7 @@ export default function Reviews({ reviews }) {
 
   const DeleteCallback = async (item) => {
     let token = await cookie.get('token')
-    const content = await axios.post(`http://localhost:5000/api/rev/delete-review/${item._id}`,{},{
+    const content = await axios.post(`https://ecomm123-backend.herokuapp.com/api/rev/delete-review/${item._id}`,{},{
       headers: {
         "Content-type": "Application/json",
         "Authorization": `Bearer ${token}`
@@ -516,7 +516,7 @@ export default function Reviews({ reviews }) {
 
 
 export async function getServerSideProps(context) {
-  const data = await axios.get(`http://localhost:5000/api/rev/get-reviews/${context.params.id}`)
+  const data = await axios.get(`https://ecomm123-backend.herokuapp.com/api/rev/get-reviews/${context.params.id}`)
     .then(response => response.data)
 
   return {
