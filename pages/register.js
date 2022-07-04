@@ -391,6 +391,7 @@ const RegisterPage = () => {
                                                 <Text color="white" w={'100%'}>
                                                     Already have an account?
                                                     <Link
+                                                    href="https://ecommerce1234.vercel.app/login"
                                                         bgGradient={'linear(to-l, #7928CA, #FF0080)'} bgClip="text">
                                                         {' '} Log in
                                                     </Link>
