@@ -73,7 +73,7 @@ const LoginPage = () => {
                                 fontSize={['sm', 'sm', 'sm']}
                                 textAlign={'center'}
                                 w={['70%', '50%', '60%']}>
-                                A place where you be swaggin'.
+                                A place where you be swaggin
                             </Text>
                         </VStack>
 
@@ -166,7 +166,7 @@ const LoginPage = () => {
 
                                             <GridItem colSpan={1}>
                                                 <Text color="white" w={'100%'}>
-                                                    Don't have an account?
+                                                    Don&apos;t have an account?
                                                     <Link
                                                         bgGradient={'linear(to-l, #7928CA, #FF0080)'} bgClip="text">
                                                         {' '} Register

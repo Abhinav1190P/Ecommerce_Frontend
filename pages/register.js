@@ -47,7 +47,7 @@ const RegisterPage = () => {
               })     
              router.push('/private')
         }
-    },[success,toast])
+    },[success,toast,router])
     
 
 
@@ -100,7 +100,7 @@ const RegisterPage = () => {
                             <Text color={'white'}
                                 fontSize={['sm', 'sm', 'sm']}
                                 w={['70%', '50%', '60%']}>
-                                It's time to join and gain access to the best of deals,
+                                It&apos;s time to join and gain access to the best of deals,
                                 From the thousands of brands and products.
                             </Text>
                         </VStack>
@@ -352,7 +352,7 @@ const RegisterPage = () => {
                                                     <Text
                                                         px={3}
                                                         color={'white'}
-                                                    >I agree to the website's
+                                                    >I agree to the website&apos;s
                                                         <Link
                                                             bgClip={'text'}
                                                             bgGradient={'linear(to-l, #7928CA, #FF0080)'}>
