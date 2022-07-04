@@ -42,7 +42,7 @@ const {id} = router.query
           isClosable: true,
         })     
   }
-  },[success])
+  },[success,toast])
   
 
   const AddToCart = () =>{
@@ -111,7 +111,7 @@ const {id} = router.query
       SetLike(isLiked)
     }
     CheckLiked()
-  },[])
+  },[id])
 
   return (
     <VStack

@@ -87,11 +87,11 @@ const IndexPage = ({ products }) => {
                         showThumbs={false}
                         autoPlay={true}>
                         <div style={{ width: '100%', height: '100%' }}>
-                            <img src='./banner4.webp' alt='Dan Abramov' />
+                            <Image src='./banner4.webp' alt='Dan Abramov' />
                         </div>
 
                         <div style={{ width: '100%', height: '100%' }}>
-                            <img src='./banner3.jpg' alt='Dan Abramov' />
+                            <Image src='./banner3.jpg' alt='Dan Abramov' />
                         </div>
 
                     </Carousel>

@@ -120,7 +120,7 @@ function Cart() {
       }
       FinalStage()
     }
-  }, [sender])
+  }, [sender,id])
 
   useEffect(() => {
     if (success) {
@@ -137,7 +137,7 @@ function Cart() {
         isClosable: true,
       })
     }
-  }, [success])
+  }, [success,toast])
 
 
   const DeleteCallback = async (item) => {
@@ -176,7 +176,7 @@ function Cart() {
         isClosable: true,
       })
     }
-  }, [deleteSuccess])
+  }, [deleteSuccess,toast])
 
 
 

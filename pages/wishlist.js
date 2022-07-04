@@ -68,7 +68,7 @@ export default function Wishlist() {
           isClosable: true,
         })
       }
-    }, [deleteSuccess])
+    }, [deleteSuccess,toast])
 
   return (
     <VStack spacing={0} minW="90vw">

@@ -31,7 +31,7 @@ const RegisterPage = () => {
         if(cookie.get('token')){
             router.push('/private')
         }
-    },[])
+    })
 
     const SendToCall = async (data) => {
         const req = await axios.post('https://ecomm123-backend.herokuapp.com/api/auth/register',data)
@@ -47,7 +47,7 @@ const RegisterPage = () => {
               })     
              router.push('/private')
         }
-    },[success])
+    },[success,toast])
     
 
 

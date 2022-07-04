@@ -54,7 +54,7 @@ const LoginPage = () => {
                 isClosable: true,
               })     
         }
-    },[success])
+    },[success,toast])
 
     return (
         <Layout>
