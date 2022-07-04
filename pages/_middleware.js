@@ -2,13 +2,10 @@ import {NextResponse} from 'next/server'
 
 
 export default async function middleware(req){
-
-
     const {cookies} = req
-
     let token = cookies.token
-    
     const url = req.url
+    
     
     if(url.includes('https://ecommerce1234.vercel.app/products')){
         if(token == undefined){
