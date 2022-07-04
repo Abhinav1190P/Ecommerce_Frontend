@@ -38,14 +38,14 @@ const IndexPage = ({ products }) => {
                     <Flex w="100%" h="100%" flexDirection={'row'} alignItems={'flex-start'}>
 
                         <Box w={["70%","60%","70%"]} h="100%">
-                            <Heading w={["50%","50%","50%"]} h="100%" px={5} py={4} fontWeight={500}>
+                            <Heading w={["80%","80%","80%"]} h="100%" px={5} py={4} fontWeight={500}>
                                 Durian
                             </Heading>
                         </Box>
 
                         <Box 
                         display={{base:'none',md:'block'}}
-                        w={["30%","40%","30%"]} h="100%">
+                        w={["20%","20%","20%"]} h="100%">
                             <Flex w="100%" h="100%" flexDirection={'row'} alignItems={'center'} justifyContent={'space-around'}>
                                 <Link href={'/products/'}>Products</Link>
                                 <Link href={'/products/cart'}>Cart</Link>
