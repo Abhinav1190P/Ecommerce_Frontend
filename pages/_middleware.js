@@ -7,7 +7,7 @@ export default async function middleware(req){
     const url = req.url
     
     
-    if(url.includes('https://ecommerce123.vercel.app/products') || url.includes('https://ecommerce123.vercel.app/reviews')){
+    if(url.includes('https://ecommerce123.vercel.app/products')){
         
         if(token == undefined){
             return NextResponse.redirect('https://ecommerce1234.vercel.app/login')
