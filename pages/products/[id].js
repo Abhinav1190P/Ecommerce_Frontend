@@ -275,7 +275,7 @@ const {id} = router.query
                   <Button
                   borderRadius={'5px'}
                   background={'transparent'}
-                  onClick={()=>{router.push(`/reviews/${product.item._id}`)}}
+                  onClick={()=>{router.push(`https://ecommerce123.vercel.app/reviews/${product.item._id}`)}}
                   border={'1px'}
                   _hover={{}}
                   _active={{ background: 'blackAlpha.500', color: 'white' }}
