@@ -78,7 +78,7 @@ export default function Reviews({ reviews }) {
         isClosable: true,
       })
     }
-  }, [urlSuccess])
+  }, [urlSuccess,toast])
 
 
   const {
@@ -132,14 +132,14 @@ export default function Reviews({ reviews }) {
         isClosable: true,
       })
     }
-  }, [success])
+  }, [success,toast])
 
   const ratingChange = (newRating) => {
     setStars(newRating)
   }
 
   useEffect(() => {
-    if (tab == 1 && userReviews.length == 0) {
+    if (tab == 1) {
       const GetUserReview = async () => {
         const data = await axios.get(`https://ecomm123-backend.herokuapp.com/api/rev/get-user-reviews/${id}`, {
           headers: {
@@ -155,7 +155,7 @@ export default function Reviews({ reviews }) {
       }
       GetUserReview()
     }
-  }, [tab])
+  }, [tab,id])
 
   const DeleteCallback = async (item) => {
     let token = await cookie.get('token')
@@ -176,21 +176,21 @@ export default function Reviews({ reviews }) {
   }
 
   useEffect(() => {
-    if (success) {
+    if (deleteSucess) {
       toast({
         title: "Review Deleted",
         status: 'success',
         isClosable: true,
       })
     }
-    else if (success == false) {
+    else if (deleteSucess == false) {
       toast({
         title: "Something went wrong",
         status: 'error',
         isClosable: true,
       })
     }
-  }, [deleteSucess])
+  }, [deleteSucess,toast])
 
   {/* */ }
 
