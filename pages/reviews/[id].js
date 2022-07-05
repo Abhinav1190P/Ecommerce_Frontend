@@ -159,7 +159,7 @@ export default function Reviews({ reviews }) {
 
   const DeleteCallback = async (item) => {
     let token = await cookie.get('token')
-    const content = await axios.post(`https://ecomm123-backend.herokuapp.comss/api/rev/delete-review/${item._id}`, {}, {
+    const content = await axios.post(`https://ecomm123-backend.herokuapp.coms/api/rev/delete-review/${item._id}`, {}, {
       headers: {
         "Content-type": "Application/json",
         "Authorization": `Bearer ${token}`
@@ -433,7 +433,7 @@ export default function Reviews({ reviews }) {
                         item.photoURL === '' ? (
                           null
                         ) : (
-                          <Box boxSize={'md'}>
+                          <Box h="max-content" w="max-content">
                             <Image src={item.photoURL} alt="none" />
                           </Box>
                         )
