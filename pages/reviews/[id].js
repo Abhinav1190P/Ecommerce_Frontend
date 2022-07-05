@@ -369,11 +369,7 @@ export default function Reviews({ reviews }) {
             tab == 0 ? (
               reviews ? (
                 reviews?.map((item, i) => (
-                  <Link
-                    _hover={{}}
-                    w="95%" minH="10vh"
-                    key={i}
-                  >
+                 
                     <VStack
                       spacing={5}
                       marginBottom={'3vh'}
@@ -381,7 +377,7 @@ export default function Reviews({ reviews }) {
                       borderTop={'10px'}
                       boxShadow={'md'}
                       rounded={'md'}
-                      w="100%"
+                      w="95%"
                       h="100%"
                     >
                       <HStack
@@ -433,9 +429,9 @@ export default function Reviews({ reviews }) {
                         item.photoURL === '' ? (
                           null
                         ) : (
-                          <Box h="max-content" w="max-content">
+                          <Box h="max-content" w="50%">
                             <Image 
-                            w="50%"
+                            w="100%"
                             h="50%"
                             src={item.photoURL} alt="none" />
                           </Box>
@@ -461,17 +457,13 @@ export default function Reviews({ reviews }) {
                         </HStack>
                       </Box>
                     </VStack>
-                  </Link>
+                 
                 ))
               ) : (null)
             ) : (
               userReviews ? (
                 userReviews?.map((item, i) => (
-                  <Link
-                    _hover={{}}
-                    w="95%" minH="10vh"
-                    key={i}
-                  >
+                  
                     <VStack
                       spacing={5}
                       marginBottom={'3vh'}
@@ -479,7 +471,7 @@ export default function Reviews({ reviews }) {
                       borderTop={'10px'}
                       boxShadow={'md'}
                       rounded={'md'}
-                      w="100%"
+                      w="90%"
                       h="100%"
                     >
                       <HStack
@@ -563,7 +555,6 @@ export default function Reviews({ reviews }) {
                         </HStack>
                       </Box>
                     </VStack>
-                  </Link>
                 ))
               ) : (null)
             )
