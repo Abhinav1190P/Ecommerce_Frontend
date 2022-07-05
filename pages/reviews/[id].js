@@ -434,7 +434,10 @@ export default function Reviews({ reviews }) {
                           null
                         ) : (
                           <Box h="max-content" w="max-content">
-                            <Image src={item.photoURL} alt="none" />
+                            <Image 
+                            w="50%"
+                            h="50%"
+                            src={item.photoURL} alt="none" />
                           </Box>
                         )
                       }
