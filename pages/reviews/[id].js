@@ -371,6 +371,7 @@ export default function Reviews({ reviews }) {
                 reviews?.map((item, i) => (
                  
                     <VStack
+                    key={i}
                       spacing={5}
                       marginBottom={'3vh'}
                       justifyContent={'space-between'}
@@ -465,6 +466,7 @@ export default function Reviews({ reviews }) {
                 userReviews?.map((item, i) => (
                   
                     <VStack
+                    key={i}
                       spacing={5}
                       marginBottom={'3vh'}
                       justifyContent={'space-between'}
