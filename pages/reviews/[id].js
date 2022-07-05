@@ -234,7 +234,7 @@ export default function Reviews({ reviews }) {
                 _selected={{ color: "white", bg: "gray.500" }}>All reviews</Tab>
               <Tab
                 fontSize={["10px", "15px", "15px"]}
-                _selected={{ color: "white", bg: "gray.500" }}>You're reviews</Tab>
+                _selected={{ color: "white", bg: "gray.500" }}>You&apos;re reviews</Tab>
             </TabList>
           </Tabs>
         </HStack>
